@@ -1,0 +1,239 @@
+/* FONT GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dancing+Script:wght@400;500;700&family=Forum&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;400;500;700&family=Raleway:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: var(--blue-light3);
+}
+
+/* ROOT */
+:root{
+    
+    /* HUE BASE*/
+    --hue: 209;
+
+    /* BASE COLOR'S */
+    --black: hsl(var(--hue), 0%, 0%);
+    --blue: hsl(var(--hue), 89%, 36%);
+    --blue-light: hsl(var(--hue), 79%, 63%);
+    --blue-light2: hsl(var(--hue), 78%, 75%);
+    --blue-light3: hsl(var(--hue), 80%, 88%);
+    --white: hsl(var(--hue), 0%, 100%);
+}
+
+
+/*  AUX */
+.border-1{
+    border: 1px solid red;
+}
+.border-2{
+    border: 1px solid blue;
+}
+
+
+/* CONTAINER */
+.containerCenter{
+    margin: 1rem;
+}
+
+/* CONTAINER FLEX */
+.containerFlex{
+    display: flex;
+}
+
+/* sectionLeft */
+/* .sectionLeft{} */
+
+/* logo */
+.logo{
+    align-items: center;
+    margin: 5rem 0 2rem;
+}
+
+.logo i{
+    font-size: 2em;
+    padding-right: 1rem;
+}
+
+.logo h2{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+/* heroTitle */
+/* .heroTitle{} */
+
+.heroTitle h1{
+    font-size: 2.75em;
+    font-weight: 400;
+}
+
+
+/* sectionRight */
+.sectionRight{
+    background: var(--blue-light2);
+    height: auto;
+    margin: 2rem 0;
+    border-radius: .25rem;
+}
+
+
+form{
+    padding: 2rem 0;
+    margin: 1rem;
+}
+
+/* icon-Input */
+.icon{
+    position: absolute;
+    top: 8px;
+    padding-left: .5rem;
+}
+.input{
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+/* INPUT'S CONFIG */
+input[type="email"], input[type="password"]{
+    padding-left: 1.75rem;
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: .25rem;
+}
+
+
+/* recoverPassword */
+.recoverPassword{
+    margin: -1rem 0;
+}
+
+/* btnLogin */
+
+.btnLogin{
+    margin: 5rem 0;
+}
+
+.btnLogin p{
+    margin: .5rem 0;
+}
+
+.btnLogin a{
+    color: var(--white);
+}
+
+
+button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    background: var(--white);
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+
+/* btnGitHub */
+.btnGitHub{
+    text-align: center;
+}
+
+.btnGitHub button{
+    margin: 1rem 0;
+}
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 768px){
+    .containerCenter{
+        margin: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        max-width: 100%;
+        width: 85vw;
+        /* height: 100%; */
+    }
+
+    .sectionLeft{
+        flex: 1 0 0;
+        margin-right: 2rem;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .logo i{
+        font-size: 3.5em;
+        padding-right: 1rem;
+    }
+    
+    .logo h2{
+        font-size: 2.5em;
+        font-weight: 500;
+    }
+
+    .heroTitle h1{
+        font-size: 2.75em;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .sectionRight{
+        flex: 1 0 0;
+        height: auto;
+    }
+
+    form{
+        padding: .3rem 0;
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .containerCenter{
+        margin: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        width: 50vw;
+        /* height: 100%; */
+    }
+
+    .sectionRight{
+        height: auto;
+    }
+
+    form{
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
