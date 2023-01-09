@@ -124,6 +124,20 @@ input[type="email"], input[type="password"]{
     border-radius: .25rem;
 }
 
+input[type="email"]:focus, input[type="password"]:focus{
+    transition: all .9s;
+    background: var(--blue-light);
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder{
+    color: var(--black);
+    font-weight: 600;
+}
+
+input[type="email"]:placeholder-shown, input[type="password"]:placeholder-shown{
+    color: var(--blue);
+}
+
 
 /* recoverPassword */
 .recoverPassword{
@@ -144,6 +158,11 @@ input[type="email"], input[type="password"]{
     color: var(--white);
 }
 
+.btnLogin button:hover{
+    transition: background .3s;
+    background: var(--blue-light);
+    color: var(--white);
+}
 
 button{
     width: 100%;
@@ -165,6 +184,11 @@ button{
 .btnGitHub button{
     margin: 1rem 0;
 }
+
+.btnGitHub button i{
+    font-size: 1.35em;
+}
+
 
 
 /* MEDIA QUERY */
@@ -226,6 +250,10 @@ button{
         max-width: 100%;
         width: 50vw;
         /* height: 100%; */
+    }
+
+    .sectionLeft{
+        margin-right: 5rem;
     }
 
     .sectionRight{
