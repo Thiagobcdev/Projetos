@@ -146,7 +146,7 @@ input[type="email"]:placeholder-shown, input[type="password"]:placeholder-shown{
 }
 
 .recoverPassword a, .btnLogin p{
-    color: var(--blue);
+    color: var(--black);
 }
 .recoverPassword a:hover{
     text-decoration: underline;
