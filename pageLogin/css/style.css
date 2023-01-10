@@ -24,7 +24,7 @@ img{
 }
 
 body{
-    background-color: var(--blue-light3);
+    background-color: var(--blue-light);
 }
 
 /* ROOT */
@@ -87,12 +87,13 @@ body{
 .heroTitle h1{
     font-size: 2.75em;
     font-weight: 400;
+    color: var(--white)
 }
 
 
 /* sectionRight */
 .sectionRight{
-    background: var(--blue-light2);
+    background: var(--blue);
     height: auto;
     margin: 2rem 0;
     border-radius: .25rem;
@@ -144,6 +145,13 @@ input[type="email"]:placeholder-shown, input[type="password"]:placeholder-shown{
     margin: -1rem 0;
 }
 
+.recoverPassword a, .btnLogin p{
+    color: var(--blue);
+}
+.recoverPassword a:hover{
+    text-decoration: underline;
+}
+
 /* btnLogin */
 
 .btnLogin{
@@ -156,6 +164,11 @@ input[type="email"]:placeholder-shown, input[type="password"]:placeholder-shown{
 
 .btnLogin a{
     color: var(--white);
+    font-weight: 500;
+}
+
+.btnLogin a:hover{
+    text-decoration: underline;
 }
 
 .btnLogin button:hover{
@@ -181,6 +194,10 @@ button{
     text-align: center;
 }
 
+.btnGitHub p {
+    font-size: 1.1em;
+}
+
 .btnGitHub button{
     margin: 1rem 0;
 }
@@ -188,6 +205,15 @@ button{
 .btnGitHub button i{
     font-size: 1.35em;
 }
+
+
+.btnGitHub button:hover{
+    transition: background .3s;
+    background: var(--blue-light);
+    color: var(--white);
+}
+
+
 
 
 
