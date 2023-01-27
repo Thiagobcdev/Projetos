@@ -37,8 +37,21 @@ img{
 
 
 
+/* ASIDE */
 
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
 
+.avatar img{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid rebeccapurple;
+    background-color: lightcoral;
+}
 
 
 
