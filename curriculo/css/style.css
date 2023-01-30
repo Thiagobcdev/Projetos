@@ -28,6 +28,15 @@ img{
 }
 
 
+/* H1/H2/H3/H4 */
+h1,h2,h3,h4{
+    font-family: "Lato";
+}
+
+p{
+    font-family: "Inter";
+}
+
 /* CONTAINER */
 .container{
     padding: 1rem;
@@ -53,10 +62,47 @@ img{
     background-color: lightcoral;
 }
 
+/* perfil | objetivo | contato | habilidade | idioma */
+.perfil, .objetivo, .contato, .habilidade, .idioma, .formacao, .experiencia{
+    padding: 1rem 0;
+}
+
+.perfil h3,
+.objetivo h3,
+.contato h3,
+.habilidade h3,
+.idioma h3,
+.TitleH2, .formacao div h3, .experiencia div h3{
+    padding-bottom: 1rem;
+}
+
+.perfil p, .objetivo p, .formacao div p, .experiencia div p{
+    line-height: 1.5rem;
+}
 
 
+.contato ul li{
+    padding: .5rem 0;
+}
 
+.idioma h4{
+    padding-bottom: .5rem;
+}
 
+.experiencia div p:nth-child(2), .experiencia div p:nth-child(3){
+    padding-bottom: 1rem;
+}
+
+/* MAIN */
+
+/* titleHero */
+.titleHero{
+    display: none;
+}
+
+.cursos div h3{
+    padding: .5rem 0;
+}
 
 
 
@@ -84,9 +130,10 @@ img{
 .p100{
     width: 40%;
     background-color: lightslategray;
+    margin: .5rem 0;
 }
 .p100, .pColor{
-    height: 20px;
+    height: 16px;
     border-radius: 1rem;
 }
 .pColor{
