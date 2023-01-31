@@ -14,7 +14,7 @@ a{
 }
 
 body{
-    background-color: lightcyan;
+    background-color: #fff;
     margin: 1rem;
 }
 
@@ -33,6 +33,10 @@ h1,h2,h3,h4{
     font-family: "Lato";
 }
 
+h2{
+    font-size: 1.5em;
+}
+
 p{
     font-family: "Inter";
 }
@@ -40,7 +44,8 @@ p{
 /* CONTAINER */
 .container{
     padding: 1rem;
-    background-color: lightblue;
+    /* background-color: ; */
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, .2);
 }
 
 
@@ -56,10 +61,10 @@ p{
 }
 
 .avatar img{
-    width: 150px;
-    border-radius: 50%;
-    border: 1px solid rebeccapurple;
-    background-color: lightcoral;
+    width: 200px;
+    border-radius: 30%;
+    border: 5px solid rgba(0, 0, 0, .2);
+    /* background-color: ; */
 }
 
 /* perfil | objetivo | contato | habilidade | idioma */
@@ -67,11 +72,11 @@ p{
     padding: 1rem 0;
 }
 
-.perfil h3,
-.objetivo h3,
-.contato h3,
-.habilidade h3,
-.idioma h3,
+.perfil h2,
+.objetivo h2,
+.contato h2,
+.habilidade h2,
+.idioma h2,
 .TitleH2, .formacao div h3, .experiencia div h3{
     padding-bottom: 1rem;
 }
@@ -92,6 +97,9 @@ p{
 .experiencia div p:nth-child(2), .experiencia div p:nth-child(3){
     padding-bottom: 1rem;
 }
+.experiencia div p i{
+    padding-right: .5rem;
+}
 
 /* MAIN */
 
@@ -109,8 +117,40 @@ p{
 
 
 
+/* MEDIA QUERY */
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    aside{
+        border-right: 2px solid rgba(0,0,0,.2);
+        flex: 1 0 0;
+        padding: 0 .5rem;
+    }
+
+    main{
+        flex: 1 0 0;
+    }
+
+    .titleHero{
+        display: block;
+    }
+}
 
 
+@media (min-width:1024px){
+    .container{
+        max-width: 75%;
+        margin: 0 auto;
+    }
+   
+    main{
+        flex: 2 0 0;
+    }
+}
 
 
 
