@@ -43,12 +43,15 @@ p{
 
 /* CONTAINER */
 .container{
-    padding: 1rem;
+    padding: 1.5rem;
     /* background-color: ; */
     box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, .2);
 }
 
-
+/* AUX */
+.pad_1{
+    padding-top: .75rem;
+}
 
 
 /* ASIDE */
@@ -168,7 +171,7 @@ p{
 
 /* p100 */
 .p100{
-    width: 40%;
+    width: 90%;
     background-color: lightslategray;
     margin: .5rem 0;
 }
