@@ -1,2 +1,2 @@
 # Projetos
- Pequenos projetos feito em curso e bootcamp's
+ Pequenos projetos feito em por mim em aulas.
