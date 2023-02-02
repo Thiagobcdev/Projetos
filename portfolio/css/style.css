@@ -12,6 +12,8 @@
 
 a{
     text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 body{
@@ -36,8 +38,24 @@ img{
     --bg-techs: #CB92B1;
 }
 
-/* AUX */
+/* TIPOGRAFIA */
+h1,h2{
+    font-weight: 700;
+    line-height: 25px;
+    
+}
+h1{
+    font-size: 23px;
+}
+h2{
+    font-size: 20px;
+}
 
+p{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
 
 /* CONTAINER */
 
