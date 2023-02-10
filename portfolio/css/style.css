@@ -45,7 +45,7 @@ h1,h2{
     
 }
 h1{
-    font-size: 23px;
+    font-size: 22px;
 }
 h2{
     font-size: 20px;
@@ -59,26 +59,125 @@ p{
 
 /* CONTAINER */
 
-.container{}
+.container{
+  /* height: 100vh; */
+  margin: 1.5rem;
+}
 
 /* CONTAINER FLEX */
 
 /* CONTAINER GRID */
 
 
+/* REPEAT ALL */
+
+.profile,
+.links,
+.tech,
+.experience,
+.education,
+.course,
+.project,
+.posts{
+    background-color: var(--bg-cards);
+    border-radius: 1.25rem;
+    margin: 1.5rem 0;
+    padding: .95rem;
+    
+}
+
 /* ASIDE */
 
-.profile{}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+}
 
-.links{}
+.profile img{
+    width: 128px;
+    height: 128px;
+    border: 2px solid #00FF00;
+    border-radius: 50%;
+}
+
+.title{
+    padding: .7rem 0;
+}
+
+.title h1{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+.title p{
+    text-align: center;
+}
+
+.links ul li i{
+    margin-right: .75rem;
+}
+.links ul li{
+    padding: .75rem 0;
+}
 
 .tech{}
 
-.experience{}
+.tech__Box{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.education{}
+.tech__Box div{
+    background-color: var(--bg-techs);
+    border-radius: 1.87rem;
+    color: #000;
+    font-size: 11px;
+    width: 86px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin: .75rem;
+}
+
+.experience ul {
+    padding: .7rem .4rem;
+}
+
+.experience ul li h4{
+    padding: .5rem 0;
+}
+.experience ul li p{
+    padding: .2rem 0;
+}
+
+.education ul li h4{
+    padding: .5rem 0;
+}
+
+.education ul li p{
+    padding: .1rem .3rem;
+}
+
+.course ul li h4{
+    padding: .5rem 0;
+    font-size: 16px;
+}
+
+.course ul li span , p{
+    padding: .5rem .3rem;
+    font-size: 14px;
+}
 
 /* MAIN */
+
+main{
+    display: none;
+}
 
 .project{}
 
