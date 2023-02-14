@@ -16,6 +16,11 @@ a{
     font-size: 13px;
 }
 
+a:hover{
+    color: #fff;
+    transition: color .2s linear;
+}
+
 body{
     background: var(--body-bg-color);
 }
@@ -45,7 +50,7 @@ h1,h2{
     
 }
 h1{
-    font-size: 22px;
+    font-size: 23px;
 }
 h2{
     font-size: 20px;
@@ -57,130 +62,148 @@ p{
     line-height: 16px;
 }
 
-/* CONTAINER */
+span{
+    font-size: 13px;
+}
 
+
+/* AUXLIAR CLASS */
+
+.mr{
+    margin: 2.5rem;
+}
+
+.bgTech{
+    background-color: var(--body-bg-color);
+    border-radius: 20px;
+    width: 84px;
+    height: 24px;
+    text-align: center;
+}
+
+.bgTech span{
+    font-size:  12px;
+}
+
+/* CONTAINER */
 .container{
-  /* height: 100vh; */
-  margin: 1.5rem;
+    /* border: 1px solid red; */
+    height: 100vh;
 }
 
 /* CONTAINER FLEX */
 
-/* CONTAINER GRID */
 
-
-/* REPEAT ALL */
-
+/* REPEAT CLASS */
 .profile,
 .links,
 .tech,
-.experience,
 .education,
-.course,
 .project,
-.posts{
+.projectArchive div{
     background-color: var(--bg-cards);
-    border-radius: 1.25rem;
-    margin: 1.5rem 0;
-    padding: .95rem;
-    
+    margin: 30px 0px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.title{
+    padding-bottom: 1rem;
 }
 
 /* ASIDE */
 
-.profile{
+/* PROFILE */
+
+.titleProfile{
+    text-align: center;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.titleProfile h1{
+    padding: .5rem 0;
+}
+
+.avatar{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 40vh;
 }
-
-.profile img{
+.avatar img{
+    border-radius: 50%;
     width: 128px;
     height: 128px;
-    border: 2px solid #00FF00;
-    border-radius: 50%;
-}
-
-.title{
-    padding: .7rem 0;
-}
-
-.title h1{
-    padding: 1rem 0;
-    text-align: center;
+    border: 2px solid #00ff00;
 }
 
 
-.title p{
-    text-align: center;
+
+
+/* LINKS */
+
+.links ul li{
+    padding: .5rem 0;
+}
+.links ul li:nth-child(1) i{
+    padding-right: .3rem;
+}
+
+.links ul li:nth-child(2) i{
+    padding-right: .2rem;
 }
 
 .links ul li i{
-    margin-right: .75rem;
-}
-.links ul li{
-    padding: .75rem 0;
+    padding-right: .3rem;
 }
 
-.tech{}
 
-.tech__Box{
+/* TECH */
+.box{
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    padding: .5rem;
 }
 
-.tech__Box div{
-    background-color: var(--bg-techs);
-    border-radius: 1.87rem;
-    color: #000;
-    font-size: 11px;
-    width: 86px;
-    height: 24px;
-    text-align: center;
-    line-height: 24px;
-    margin: .75rem;
+
+/* EDUCATION */
+
+.education ul{
+    padding: .5rem;
 }
 
-.experience ul {
-    padding: .7rem .4rem;
+.education ul li{
+    line-height: 25px;
 }
 
-.experience ul li h4{
-    padding: .5rem 0;
-}
-.experience ul li p{
-    padding: .2rem 0;
+/* PROJECT */
+
+.projectArchive div i{
+    padding-right: .3rem;
 }
 
-.education ul li h4{
+.projectArchive div p{
     padding: .5rem 0;
 }
 
-.education ul li p{
-    padding: .1rem .3rem;
+
+
+
+
+/* MEDIA QUERY'S */
+
+@media(min-width:768px){
+    .containerFlex{
+        display: flex;
+    }
+
+    aside{
+        flex: 1 0 300px;
+    }
+
+    main{
+        flex: 3 1 auto;
+        margin-left: 60px;
+    }
+
 }
-
-.course ul li h4{
-    padding: .5rem 0;
-    font-size: 16px;
-}
-
-.course ul li span , p{
-    padding: .5rem .3rem;
-    font-size: 14px;
-}
-
-/* MAIN */
-
-main{
-    display: none;
-}
-
-.project{}
-
-.posts{}
-
-/* FOOTER */
